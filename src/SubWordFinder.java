@@ -110,7 +110,7 @@ public class SubWordFinder implements WordFinder {
   public static void main(String[] args) {
        SubWordFinder app = new SubWordFinder();
        ArrayList<SubWord> subwords = app.getSubWords();
-       System.out.println("* List of SubWord ojbects in dictionary *");
+       System.out.println("* List of SubWord objects in dictionary *");
        for(SubWord temp : subwords) {
            System.out.println(temp);
        }
