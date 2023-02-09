@@ -2,7 +2,11 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
-
+/**
+ * Takes word inputs and determines if they have subwords by dividing them in half and comparing them to the scrabble dictionary
+ * @author Gil Mebane
+ * @version 02/09/2023
+ */
 public class SubWordFinder implements WordFinder {
     private ArrayList<ArrayList<String>> dictionary;
     private String alpha = "abcdefghijklmnopqrstuvwxyz";
