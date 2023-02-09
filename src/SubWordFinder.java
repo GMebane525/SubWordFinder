@@ -102,7 +102,11 @@ public class SubWordFinder implements WordFinder {
     public boolean inDictionary(String word) {
         return inList(dictionary.get(alpha.indexOf(word.substring(0, 1))), 0, dictionary.get(alpha.indexOf(word.substring(0,1))).size()-1, word) >=0;
     }
-
+    /**
+     * Main method for class ISBNValidator
+     *
+     * @param args Command-line arguments, if needed.
+     */
   public static void main(String[] args) {
        SubWordFinder app = new SubWordFinder();
        ArrayList<SubWord> subwords = app.getSubWords();
